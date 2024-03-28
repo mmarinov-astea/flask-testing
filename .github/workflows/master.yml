@@ -24,4 +24,7 @@ jobs:
           pip install -r src/requirements.txt
 
       - name: Start Flask App
-        run: python3 src/app.py
+        run: nohup python3 src/app.py
+
+      - name: Run Tests
+        run: python3 src/tests.py
