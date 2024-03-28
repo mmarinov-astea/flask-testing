@@ -33,3 +33,6 @@ jobs:
 
       - name: Start Docker Container
         run: docker run -d --name flask-app-container flask-app
+
+      - name: Get Container Logs
+        run: docker logs flask-app-container
