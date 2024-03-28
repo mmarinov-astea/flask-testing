@@ -31,3 +31,5 @@ jobs:
 
       - name: Run Tests
         run: python3 src/tests.py
+        env:
+          DATABASE_URL: mock
