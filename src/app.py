@@ -5,6 +5,7 @@ from flask import Flask
 app = Flask(__name__)
 
 database_url = os.environ["DATABASE_URL"]
+print("Using database: {}".format(database_url))
 
 @app.route('/')
 def hello():

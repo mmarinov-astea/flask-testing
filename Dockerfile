@@ -1,6 +1,6 @@
 FROM --platform=linux/amd64 python:3-alpine as build
 
-ENV DATABASE_URL=mock
+ENV DATABASE_URL=original_base
 
 COPY src/ /app
 
