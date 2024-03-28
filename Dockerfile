@@ -1,5 +1,7 @@
 FROM --platform=linux/amd64 python:3-alpine as build
 
+ENV DATABASE_URL=mock
+
 COPY src/ /app
 
 WORKDIR /app

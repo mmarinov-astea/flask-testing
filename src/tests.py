@@ -10,7 +10,7 @@ class TestFlaskApp(unittest.TestCase):
     def test_hello(self):
         response = self.app.get('/')
         self.assertEqual(response.status_code, 200)
-        self.assertEqual(response.data.decode(), "Hello, Martin")
+        self.assertEqual(response.data.decode(), "Hello, mock")
 
 if __name__ == '__main__':
     unittest.main()
