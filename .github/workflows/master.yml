@@ -26,6 +26,9 @@ jobs:
       - name: Build Docker Image
         run: docker build -t flask-app .
 
+      - name: Start Docker Container
+        run: docker run -d --name flask-app-container flask-app
+
       # - name: Start Flask App
       #   run: nohup python3 src/app.py
 
