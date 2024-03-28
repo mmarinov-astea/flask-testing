@@ -22,3 +22,6 @@ jobs:
         run: |
           python3 -m pip install --upgrade pip
           pip install -r src/requirements.txt
+
+      - name: Start Flask App
+        run: python3 src/app.py
